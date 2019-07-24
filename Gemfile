@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -77,4 +79,4 @@ group :development, :test do
 end
 
 gem 'devise'
-
+gem 'rubocop', '~> 0.73.0', require: false
