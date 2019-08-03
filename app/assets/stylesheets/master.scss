@@ -1,1 +1,149 @@
 @import "bootstrap";
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff; 
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px; 
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background: image_url('crossword.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+
+.navbar .navbar-inverse  .navbar-brand {
+  color: #fff;  
+  font-family: 'ralewayblack';
+  font-size: 26px;
+  letter-spacing: -0.3px;
+  background: image_url('cartographer.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+li a:hover { 
+  background-color: #555;
+  color: white;
+}
+
+
+.invalid-feedback {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
+
+
+#map {
+  height: 300px;
+}
+
+.clear {
+    clear: both;
+}
+
+// 
+
+body  {
+  background-color: #5d5d5d;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px ;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  border: 1px solid#b5915f;
+  background-color: #fafffa;
+}
+
+.brook {
+  background-image: url('brook.png');
+  background-size: 100px;
+}
+
+.wrook {
+  background-image: url('wrook.png');
+  background-size: 100px;
+}
+
+.bknight {
+  background-image: url('bknight.png');
+  background-size: 100px;
+}
+
+.wknight {
+  background-image: url('wknight.png');
+  background-size: 100px;
+}
+
+.bking {
+  background-image: url('bking.png');
+  background-size: 100px;
+}
+
+.wking {
+  background-image: url('wking.png');
+  background-size: 100px;
+}
+
+.bqueen {
+  background-image: url('bqueen.png');
+  background-size: 100px;
+}
+
+.wqueen {
+  background-image: url('wqueen.png');
+  background-size: 100px;
+}
+
+.bpawn {
+  background-image: url('bpawn.png');
+  background-size: 100px;
+}
+
+.wpawn {
+  background-image: url('wpawn.png');
+  background-size: 100px;
+}
+
+.bbishop {
+  background-image: url('bbishop.png');
+  background-size: 100px;
+}
+
+.wbishop {
+  background-image: url('wbishop.png');
+  background-size: 100px;
+}
+
+.selected {
+  box-shadow: 0 0 20px pink inset;
+}
