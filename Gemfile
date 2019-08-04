@@ -80,3 +80,5 @@ end
 
 gem 'devise'
 gem 'rubocop', '~> 0.73.0', require: false
+
+gem 'paperclip', '~> 6.0.0'
