@@ -2,17 +2,38 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff; 
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
-  margin-bottom: 15px; 
-  padding: 20px;
+    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    box-shadow: 1px 1px 2px 0 #d0d0d0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    // margin-top: 10px;
+    // margin-bottom: 5px;
+    margin: 3.5%;
+    padding: 30px;
+    border-radius: 2.5em;
 }
 
+.round-image-100 {
+    background-color: white;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    img { width: 80% }
+}
+
+.text-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
 
 body {
   background: image_url('Chess.jpg') no-repeat center center fixed;
