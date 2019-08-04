@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
 .booyah-box {
     -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -33,3 +34,140 @@
     width: 50%;
     text-align: center;
   }
+
+body {
+  background: image_url('Chess.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  }
+
+
+h1 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  margin-left: 20px;
+  font-size: 50px;
+  }
+
+h2 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  margin-left: 60px;
+  }
+
+  h3 {
+    color: #D7D1CD;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+  }
+
+.login-form {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.input[type="text"] {
+  background-color: #D7D1CD;
+  color: black;
+}
+
+.btn {
+  margin-top: 35px;
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  background: black;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #D7D1CD;
+}
+
+.btn:hover {
+  color: #D7D1CD;
+  background-color: purple;
+  border-color: #D7D1CD;
+}
+
+.btn:visited {
+  border-color: #D7D1CD;
+}
+
+a:link {
+  color: #D7D1CD;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.modal-login {
+  width: 350px;
+}
+
+.modal-login .modal-content {
+  background: black;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+}
+
+.modal-login .modal-header {
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+
+.modal-login h4 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.modal-login .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-login .form-control, .modal-login .btn {
+  min-height: 40px;
+  border-radius: 30px; 
+  font-size: 22px;
+  transition: all 0.5s;
+}
+
+.modal-login .form-control {
+  font-size: 13px;
+}
+    
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.modal-login .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.modal-login .btn {
+  background: purple;
+  color: black;
+  font-family: 'Acme', sans-serif;
+  border: none;
+  line-height: normal;
+}
+
+.modal-login .btn:hover, .modal-login .btn:focus {
+  background: #8753ff;
+}
+
+ 
