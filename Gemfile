@@ -76,9 +76,15 @@ gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem "factory_bot_rails"
 end
 
 gem 'devise'
 gem 'rubocop', '~> 0.73.0', require: false
 
+gem 'font-awesome-sass', '~> 5.9.0'
+
+
 gem 'paperclip', '~> 6.0.0'
+
+
