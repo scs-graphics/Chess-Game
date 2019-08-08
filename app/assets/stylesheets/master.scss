@@ -11,6 +11,7 @@
   margin: 3.5%;
   padding: 30px;
   border-radius: 2.5em;
+  // width: auto;
 }
 
 body {
@@ -67,8 +68,24 @@ li a:hover {
 }
 
 .board {
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px ;
+  display: inline-grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 0.5em;
+  width: auto;
+  height: auto;
+}
+
+.cell {
+  background-color: grey;
+  border: 3px solid whitesmoke;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 0.4em;
+  text-align: center;
 }
 
 .row {
@@ -76,71 +93,64 @@ li a:hover {
   grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
 }
 
-.cell {
-  height: 100px;
-  width: 100px;
-  border: 1px solid#b5915f;
-  background-color: #fafffa;
-}
-
 .brook {
   background-image: url('brook.png');
-  background-size: 100px;
+  // background-size: auto;
 }
 
 .wrook {
   background-image: url('wrook.png');
-  background-size: 100px;
+  // background-size: auto;
 }
 
 .bknight {
   background-image: url('bknight.png');
-  background-size: 100px;
+  // background-size: auto;
 }
 
 .wknight {
   background-image: url('wknight.png');
-  background-size: 100px;
+  // background-size: auto;
 }
 
 .bking {
   background-image: url('bking.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .wking {
   background-image: url('wking.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .bqueen {
   background-image: url('bqueen.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .wqueen {
   background-image: url('wqueen.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .bpawn {
   background-image: url('bpawn.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .wpawn {
   background-image: url('wpawn.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .bbishop {
   background-image: url('bbishop.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .wbishop {
   background-image: url('wbishop.png');
-  background-size: 100px;
+  // background-size: 100px;
 }
 
 .selected {
@@ -289,3 +299,13 @@ a:link {
 .modal-login .btn:hover, .modal-login .btn:focus {
   background: #8753ff;
 }
+
+.piece  {
+
+}
+
+.next-player  {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+ }
