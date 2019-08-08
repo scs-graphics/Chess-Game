@@ -8,7 +8,9 @@
             </div>
         </div>
         <div class="col-12 col-sm-8">
+            <br /><br />
             <h1>My Dashboard</h1>
+            <br />
             <h3><%= @user.email %></h3>
             <h3>Been playing since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
             <h3>Games Won: <%= @user.games_won %> Games</h3>
