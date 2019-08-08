@@ -1,3 +1,4 @@
+
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
@@ -309,3 +310,595 @@ a:link {
   height: 100px;
   border: 2px solid black;
  }
+=======
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff; 
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin: 3.5%;
+  padding: 30px;
+  border-radius: 2.5em;
+}
+
+body.home {
+
+body {
+  background: image_url('Chess.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  background-color: #5d5d5d;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+.navbar .navbar-inverse  .navbar-brand {
+  color: #fff;  
+  font-family: 'ralewayblack';
+  font-size: 26px;
+  letter-spacing: -0.3px;
+  background: image_url('cartographer.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+li a:hover { 
+  background-color: #555;
+  color: white;
+}
+
+
+body.team {
+  background: image_url('wall.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+
+.invalid-feedback {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
+
+#map {
+  height: 300px;
+}
+
+.clear {
+    clear: both;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px ;
+}
+
+.game-row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  border: 1px solid#b5915f;
+  background-color: #fafffa;
+}
+
+.brook {
+  background-image: url('brook.png');
+  background-size: 100px;
+}
+
+.wrook {
+  background-image: url('wrook.png');
+  background-size: 100px;
+}
+
+.bknight {
+  background-image: url('bknight.png');
+  background-size: 100px;
+}
+
+.wknight {
+  background-image: url('wknight.png');
+  background-size: 100px;
+}
+
+.bking {
+  background-image: url('bking.png');
+  background-size: 100px;
+}
+
+.wking {
+  background-image: url('wking.png');
+  background-size: 100px;
+}
+
+.bqueen {
+  background-image: url('bqueen.png');
+  background-size: 100px;
+}
+
+.wqueen {
+  background-image: url('wqueen.png');
+  background-size: 100px;
+}
+
+.bpawn {
+  background-image: url('bpawn.png');
+  background-size: 100px;
+}
+
+.wpawn {
+  background-image: url('wpawn.png');
+  background-size: 100px;
+}
+
+.bbishop {
+  background-image: url('bbishop.png');
+  background-size: 100px;
+}
+
+.wbishop {
+  background-image: url('wbishop.png');
+  background-size: 100px;
+}
+
+.selected {
+  box-shadow: 0 0 20px pink inset;
+}
+
+.round-image-100 {
+    background-color: white;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    img { width: 80% }
+}
+
+.text-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+
+h1 {
+  margin-left: 10px;
+  font-size: 50px;
+  float: left;
+  margin-left: 50px;
+}
+
+
+h2 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  margin-left: 60px;
+  text-align: left;
+  }
+
+h3 {
+    color: #D7D1CD;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+h5{
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+}
+
+
+hr {
+ border-width: 4px; 
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+
+.col-sm {
+  margin-bottom: 95px;
+}
+
+
+.col-sm-9 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+}
+
+
+.title2 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.title3 {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  item-align: left;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-right: 300px;
+  background: #283245;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-color: #D7D1CD;
+  border-width: 2px;
+}
+
+
+.intro {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+
+.background {
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+.br {
+  display: block;
+  line-height: 10px;
+}
+
+.boxed {
+  border: 1px solid black;
+  background-color: #243445;
+  width: 100;
+  justify-content: center;
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+
+/*This is for the font-awesome links*/
+
+.fab {
+  color: #D7D1CD;
+}
+
+
+
+
+/*This is for the button to open the modal*/
+
+
+.login-form {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.input[type="text"] {
+  background-color: #D7D1CD;
+  color: black;
+}
+
+.btn {
+  margin-top: 35px;
+  color: #D7D1CD;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  background: black;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #D7D1CD;
+  border-width: 2px;
+}
+
+.btn:hover {
+  color: #D7D1CD;
+  background-color: purple;
+  border-color: #D7D1CD;
+}
+
+.btn:visited {
+  border-color: #D7D1CD;
+}
+
+a:link {
+  color: #D7D1CD;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/*this is the modal for the login page*/
+
+
+.modal-login {
+  width: 350px;
+}
+
+.modal-login .modal-content {
+  background: black;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+}
+
+.modal-login .modal-header {
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+
+.modal-login h4 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.modal-login .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-login .form-control, .modal-login .btn {
+  min-height: 40px;
+  border-radius: 30px; 
+  font-size: 22px;
+  transition: all 0.5s;
+}
+
+.modal-login .form-control {
+  font-size: 13px;
+}
+    
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.modal-login .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+
+/*This is the button on the modal*/
+
+.modal-login .btn {
+  background: purple;
+  color: black;
+  font-family: 'Acme', sans-serif;
+  border: none;
+  line-height: normal;
+}
+
+.modal-login .btn:hover, .modal-login .btn:focus {
+  background: #8753ff;
+}
+
+
+.col-4 {
+  margin-bottom: 100px;
+  item-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*this is the code for the direction-aware hover effect*/
+
+
+
+$duration: 250ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
+
+/* the important bits */
+li {
+  perspective: 400px;
+}
+
+.info {
+  // hide-initial-state
+  transform: rotate3d(1,0,0, 90deg);
+  
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  background-color: #243445;
+}
+
+.in-top .info {
+   transform-origin: 50% 0%;
+   animation: in-top $duration $timing-fn 0ms 1 forwards;
+}
+.in-right .info {
+  transform-origin: 100% 0%;
+  animation: in-right $duration $timing-fn 0ms 1 forwards;
+}
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in-left $duration $timing-fn 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  animation: out-top $duration $timing-fn 0ms 1 forwards;
+}
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation: out-right $duration $timing-fn 0ms 1 forwards;
+}
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation: out-left $duration $timing-fn 0ms 1 forwards;
+}
+
+@keyframes in-top {
+  from {transform: rotate3d(-1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-right {
+  from {transform: rotate3d(0,-1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-bottom {
+  from {transform: rotate3d(1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-left {
+  from {transform: rotate3d(0,1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+
+@keyframes out-top {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(-1,0,0, 116.54deg)}}
+@keyframes out-right {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,-1,0, 116.54deg)}}
+@keyframes out-bottom {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(1,0,0, 116.54deg)}}
+@keyframes out-left {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,1,0, 116.54deg)}}
+
+
+/* you can ignore this ones */
+ul {
+  padding: 0;
+  margin: 0 0 50px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+li {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+  
+  a  {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  
+  .first {
+    width: 100%;
+    height: 100%;
+    background: image_url('siri.jpg');
+    color: transparentize($wet-asphalt, .4);
+    box-shadow: inset 0 2px 20px darken($clouds, 2);
+}
+
+  .second {
+    width: 100%;
+    height: 100%;
+    background: image_url('Charles.jpg');
+    color: transparentize($wet-asphalt, .4);
+    box-shadow: inset 0 2px 20px darken($clouds, 2);
+}
+
+  .third {
+    width: 100%;
+    height: 100%;
+    background: image_url('Samy.jpg');
+    color: transparentize($wet-asphalt, .4);
+    box-shadow: inset 0 2px 20px darken($clouds, 2);
+ }
+
+
+    svg {
+      pointer-events: none;
+      width: 50px;
+      path {
+        fill: transparentize($wet-asphalt, .8);
+      }
+    }
+  }
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
