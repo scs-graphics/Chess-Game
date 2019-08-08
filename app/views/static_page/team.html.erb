@@ -1,0 +1,159 @@
+<script>
+  'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var nodes = [].slice.call(document.querySelectorAll('li'), 0);
+var directions = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
+var classNames = ['in', 'out'].map(function (p) {
+  return Object.values(directions).map(function (d) {
+    return p + '-' + d;
+  });
+}).reduce(function (a, b) {
+  return a.concat(b);
+});
+
+var getDirectionKey = function getDirectionKey(ev, node) {
+  var _node$getBoundingClie = node.getBoundingClientRect();
+
+  var width = _node$getBoundingClie.width;
+  var height = _node$getBoundingClie.height;
+  var top = _node$getBoundingClie.top;
+  var left = _node$getBoundingClie.left;
+
+  var l = ev.pageX - (left + window.pageXOffset);
+  var t = ev.pageY - (top + window.pageYOffset);
+  var x = l - width / 2 * (width > height ? height / width : 1);
+  var y = t - height / 2 * (height > width ? width / height : 1);
+  return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+};
+
+var Item = function () {
+  function Item(element) {
+    var _this = this;
+
+    _classCallCheck(this, Item);
+
+    this.element = element;
+    this.element.addEventListener('mouseover', function (ev) {
+      return _this.update(ev, 'in');
+    });
+    this.element.addEventListener('mouseout', function (ev) {
+      return _this.update(ev, 'out');
+    });
+  }
+
+  _createClass(Item, [{
+    key: 'update',
+    value: function update(ev, prefix) {
+      var _element$classList;
+
+      (_element$classList = this.element.classList).remove.apply(_element$classList, _toConsumableArray(classNames));
+      this.element.classList.add(prefix + '-' + directions[getDirectionKey(ev, this.element)]);
+    }
+  }]);
+
+  return Item;
+}();
+
+nodes.forEach(function (node) {
+  return new Item(node);
+});
+</script>
+
+
+
+
+<body class="team">
+   
+<div class="container"> 
+  <div class="row">
+    <div class="col-sm-2">
+      <a class="btn btn-primary" href="/">Home</a> 
+    </div>
+    <div class="col-sm-10"><br>
+      <div class="title3">Meet the MOA team
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <br /><br /><br /><br />
+
+<ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm align-items-center">
+        <% 1.times do %>
+          <li>
+            <a class="first" href="#">
+              <svg viewBox="0 0 0 0" x="0px" y="0px">
+              </svg>
+              <g>
+                <path d="M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z"></path>
+              </g>
+            </a>
+            <div class="info">
+              <h4 class="intro">Siri Mitchell</h4><hr>
+              <p class="background">Background: Entreprenuer in the logistics industry.<br><br>Looking for: A place I can make a positive impact while sharpening my developer skills. I love watching a project take shape and being a valuable part of a team.<br><br>For this project, I helped set up the database and then worked primarily on the front end, expanding my skills with html/CSS. It was really fun to research each elements and work collaboratively to bring the app to life!<br /><br />What's fun? I love sci fi/fantasy books and old school crafts like quilting and crocheting. Really, I love to learn.</p>
+            </div><br>
+              <a class="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/sirimitchell/"></a>&nbsp
+              <a class="fab fa-github fa-3x" href="https://github.com/SiriMitchell"></a>
+          </li>
+        <% end %>
+      </div>
+     
+
+
+      <div class="col-sm align-items-center">
+        <% 1.times do %>
+          <li>
+            <a class="second" href="#">
+              <svg viewBox="0 0 0 0" x="0px" y="0px">
+                <g>
+                  <path d="M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="info">
+              <h4 class="intro">Charles O'Riley</h4><hr>
+              <p class="background">Background:<br><br>Looking for:<br><br>For this project, I..<br><br>What's fun?</p>
+            </div><br>
+              <a class="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/ceoriley/"></a>
+              &nbsp
+              <a class="fab fa-github fa-3x" href="https://github.com/nagashi"></a>
+          </li>
+        <% end %>
+      </div>
+
+
+      <div class="col-sm align-items-center">
+        <% 1.times do %>
+          <li>
+            <a class="third" href="#">
+              <svg viewBox="0 0 0 0" x="0px" y="0px">
+                <g>
+                  <path d="M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z"></path>
+                </g>
+              </svg>
+            </a>
+            <div class="info">
+              <h4 class="intro">Samy Ayoub</h4><hr>
+              <p class="background">Background:<br><br>Looking for<br><br>For this project, I..<br><br>What's fun?</p>
+            </div><br>
+              <a class="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/samyayoub/"></a>
+              &nbsp
+              <a class="fab fa-github fa-3x" href="https://github.com/samyayoub"></a>
+          </li>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</ul>
+
+
+</body>
