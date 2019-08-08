@@ -54,7 +54,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  gem 'capybara', '~> 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
@@ -80,4 +80,8 @@ end
 
 gem 'devise'
 gem 'rubocop', '~> 0.73.0', require: false
+
 gem 'font-awesome-sass', '~> 5.9.0'
+
+
+gem 'paperclip', '~> 6.0.0'

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess Game</title>
+      <script type="text/javascript" src="app/assets/javascripts/jquery-1.7.1.min.js"></script>
+    	<script src="app/assets/javascripts/jquery.ui.core.js"></script>
+    	<script src="app/assets/javascripts/jquery.ui.widget.js"></script>
+    	<script src="app/assets/javascripts/jquery.ui.mouse.js"></script>
+    	<script src="app/assets/javascripts/jquery.ui.draggable.js"></script>
+      <script src="app/assets/javascripts/jquery.ui.droppable.js"></script>
+      <script type="text/javascript" src="app/assets/javascripts/jquery.chess.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $.fn.chess({
+                 type: 'fen',
+                 position: '4k3/R7/1R6/8/8/8/8/4K3'
+               });
+            });
+        </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="booyah-box col-10 offset-1">
+    // <div class="board">
+    //   <div class="game-row one">
+    //     <div class="cell brook"></div>
+    //     <div class="cell bknight"></div>
+    //     <div class="cell bbishop"></div>
+    //     <div class="cell bqueen"></div>
+    //     <div class="cell bking"></div>
+    //     <div class="cell bbishop"></div>
+    //     <div class="cell bknight"></div>
+    //     <div class="cell brook"></div>
+    //   </div>
+
+    //   <div class="row two">
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //     <div class="cell bpawn"></div>
+    //   </div> 
+
+    //   <div class="row three">
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //   </div> 
+
+    //   <div class="row four">
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //   </div>
+
+    //   <div class="row five">
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //   </div>
+
+    //   <div class="row six">
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //     <div class="cell"></div>
+    //   </div>
+
+    //   <div class="row seven">
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //     <div class="cell wpawn"></div>
+    //   </div>
+
+    //   <div class="row eight">
+    //     <div class="cell wrook"></div>
+    //     <div class="cell wknight"></div>
+    //     <div class="cell wbishop"></div>
+    //     <div class="cell wqueen"></div>
+    //     <div class="cell wking"></div>
+    //     <div class="cell wbishop"></div>
+    //     <div class="cell wknight"></div>
+    //     <div class="cell wrook"></div>
+    //   </div>
+      
+    //   <div>
+    // </div>
+    // <script src="app.js"></script>
+  </div>
+</body>
+</html>
