@@ -1,6 +1,6 @@
-
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -25,15 +25,9 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
-}
-
-#fade {
-  text-align: center;
-  color: rgb(245, 2, 2);
 }
 
 .navbar .navbar-inverse  .navbar-brand {
@@ -51,304 +45,18 @@ li a.active {
   color: white;
 }
 
-
 li a:hover { 
   background-color: #555;
   color: white;
 }
 
-.invalid-feedback {
-  color: #ff3333;
-  background-color: #FFEEEE;
-  border-radius: 3px;
-  padding: 2px 8px 2px 8px;
-}
-
-#map {
-  height: 300px;
-}
-
-.clear {
-    clear: both;
-}
-
-.board {
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px ;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
-}
-
-.cell {
-  height: 100px;
-  width: 100px;
-  border: 1px solid#b5915f;
-  background-color: #fafffa;
-}
-
-.brook {
-  background-image: url('brook.png');
-  background-size: 100px;
-}
-
-.wrook {
-  background-image: url('wrook.png');
-  background-size: 100px;
-}
-
-.bknight {
-  background-image: url('bknight.png');
-  background-size: 100px;
-}
-
-.wknight {
-  background-image: url('wknight.png');
-  background-size: 100px;
-}
-
-.bking {
-  background-image: url('bking.png');
-  background-size: 100px;
-}
-
-.wking {
-  background-image: url('wking.png');
-  background-size: 100px;
-}
-
-.bqueen {
-  background-image: url('bqueen.png');
-  background-size: 100px;
-}
-
-.wqueen {
-  background-image: url('wqueen.png');
-  background-size: 100px;
-}
-
-.bpawn {
-  background-image: url('bpawn.png');
-  background-size: 100px;
-}
-
-.wpawn {
-  background-image: url('wpawn.png');
-  background-size: 100px;
-}
-
-.bbishop {
-  background-image: url('bbishop.png');
-  background-size: 100px;
-}
-
-.wbishop {
-  background-image: url('wbishop.png');
-  background-size: 100px;
-}
-
-.selected {
-  box-shadow: 0 0 20px pink inset;
-}
-
-.round-image-100 {
-    background-color: white;
-    border-radius: 25px;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    img { width: 80% }
-}
-
-.text-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-  }
-
-h1 {
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  margin-left: 20px;
-  font-size: 50px;
-  }
-
-h2 {
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  margin-left: 60px;
-  }
-
-  h3 {
-    color: #D7D1CD;
-    font-family: 'Acme', sans-serif;
-    font-size: 20px;
-  }
-
-.login-form {
-  width: 180px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.form-control {
-  border-radius: 50px;
-}
-
-.input[type="text"] {
-  background-color: #D7D1CD;
-  color: black;
-}
-
-.btn {
-  margin-top: 35px;
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  font-size: 20px;
-  background: black;
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-color: #D7D1CD;
-}
-
-.btn:hover {
-  color: #D7D1CD;
-  background-color: purple;
-  border-color: #D7D1CD;
-}
-
-.btn:visited {
-  border-color: #D7D1CD;
-}
-
-a:link {
-  color: #D7D1CD;
-  text-decoration: none;
-  text-align: center;
-}
-
-.modal-login {
-  width: 350px;
-}
-
-.modal-login .modal-content {
-  background: black;
-  padding: 20px;
-  border-radius: 50px;
-  border: none;
-}
-
-.modal-login .modal-header {
-  border-bottom: none;
-  position: relative;
-  justify-content: center;
-}
-
-.modal-login h4 {
-  text-align: center;
-  font-size: 26px;
-}
-
-.modal-login .form-group {
-  margin-bottom: 20px;
-}
-
-.modal-login .form-control, .modal-login .btn {
-  min-height: 40px;
-  border-radius: 30px; 
-  font-size: 22px;
-  transition: all 0.5s;
-}
-
-.modal-login .form-control {
-  font-size: 13px;
-}
-    
-.modal-login .hint-text {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.modal-login .close {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-.modal-login .btn {
-  background: purple;
-  color: black;
-  font-family: 'Acme', sans-serif;
-  border: none;
-  line-height: normal;
-}
-
-.modal-login .btn:hover, .modal-login .btn:focus {
-  background: #8753ff;
-}
-=======
-
-@import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
-
-.booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff; 
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin: 3.5%;
-  padding: 30px;
-  border-radius: 2.5em;
-  // width: auto;
-}
-
-body {
-  background: image_url('Chess.jpg') no-repeat center center fixed;
+body.team {
+  background: image_url('wall.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 500px;
-  background-color: #5d5d5d;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
-}
-
-.navbar .navbar-inverse  .navbar-brand {
-  color: #fff;  
-  font-family: 'ralewayblack';
-  font-size: 26px;
-  letter-spacing: -0.3px;
-  background: image_url('cartographer.png');
-  box-shadow: 0px 1px 3px #2a2a2a;
-  margin-bottom: 0;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-
-li a:hover { 
-  background-color: #555;
-  color: white;
 }
 
 .invalid-feedback {
@@ -368,14 +76,21 @@ li a:hover {
 
 .board {
   display: inline-grid;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
   padding: 20px;
   background-color: gray;
   border-radius: 0.5em;
   width: auto;
   height: auto;
 }
+
+
+.game-row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
+}
+
 
 .cell {
   background-color: grey;
@@ -387,29 +102,24 @@ li a:hover {
   text-align: center;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
-}
-
 .brook {
   background-image: url('brook.png');
-  // background-size: auto;
+  // background-size: 100px;
 }
 
 .wrook {
   background-image: url('wrook.png');
-  // background-size: auto;
+  // background-size: 100px;
 }
 
 .bknight {
   background-image: url('bknight.png');
-  // background-size: auto;
+  // background-size: 100px;
 }
 
 .wknight {
   background-image: url('wknight.png');
-  // background-size: auto;
+  // background-size: 100px;
 }
 
 .bking {
@@ -450,322 +160,6 @@ li a:hover {
 .wbishop {
   background-image: url('wbishop.png');
   // background-size: 100px;
-}
-
-.selected {
-  box-shadow: 0 0 20px pink inset;
-}
-
-.round-image-100 {
-    background-color: white;
-    border-radius: 25px;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    img { width: 80% }
-}
-
-.text-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-  }
-
-h1 {
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  margin-left: 20px;
-  font-size: 50px;
-  }
-
-h2 {
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  margin-left: 60px;
-  }
-
-  h3 {
-    color: #D7D1CD;
-    font-family: 'Acme', sans-serif;
-    font-size: 20px;
-  }
-
-.login-form {
-  width: 180px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.form-control {
-  border-radius: 50px;
-}
-
-.input[type="text"] {
-  background-color: #D7D1CD;
-  color: black;
-}
-
-.btn {
-  margin-top: 35px;
-  color: #D7D1CD;
-  font-family: 'Acme', sans-serif;
-  font-size: 20px;
-  background: black;
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-color: #D7D1CD;
-}
-
-.btn:hover {
-  color: #D7D1CD;
-  background-color: purple;
-  border-color: #D7D1CD;
-}
-
-.btn:visited {
-  border-color: #D7D1CD;
-}
-
-a:link {
-  color: #D7D1CD;
-  text-decoration: none;
-  text-align: center;
-}
-
-.modal-login {
-  width: 350px;
-}
-
-.modal-login .modal-content {
-  background: black;
-  padding: 20px;
-  border-radius: 50px;
-  border: none;
-}
-
-.modal-login .modal-header {
-  border-bottom: none;
-  position: relative;
-  justify-content: center;
-}
-
-.modal-login h4 {
-  text-align: center;
-  font-size: 26px;
-}
-
-.modal-login .form-group {
-  margin-bottom: 20px;
-}
-
-.modal-login .form-control, .modal-login .btn {
-  min-height: 40px;
-  border-radius: 30px; 
-  font-size: 22px;
-  transition: all 0.5s;
-}
-
-.modal-login .form-control {
-  font-size: 13px;
-}
-    
-.modal-login .hint-text {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.modal-login .close {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-.modal-login .btn {
-  background: purple;
-  color: black;
-  font-family: 'Acme', sans-serif;
-  border: none;
-  line-height: normal;
-}
-
-.modal-login .btn:hover, .modal-login .btn:focus {
-  background: #8753ff;
-}
-
-.piece  {
-
-}
-
-.next-player  {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
- }
-=======
-@import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
-
-.booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff; 
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin: 3.5%;
-  padding: 30px;
-  border-radius: 2.5em;
-}
-
-body.home {
-
-body {
-  background: image_url('Chess.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
-  background-color: #5d5d5d;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
-}
-
-.navbar .navbar-inverse  .navbar-brand {
-  color: #fff;  
-  font-family: 'ralewayblack';
-  font-size: 26px;
-  letter-spacing: -0.3px;
-  background: image_url('cartographer.png');
-  box-shadow: 0px 1px 3px #2a2a2a;
-  margin-bottom: 0;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-
-li a:hover { 
-  background-color: #555;
-  color: white;
-}
-
-
-body.team {
-  background: image_url('wall.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 500px;
-}
-
-
-.invalid-feedback {
-  color: #ff3333;
-  background-color: #FFEEEE;
-  border-radius: 3px;
-  padding: 2px 8px 2px 8px;
-}
-
-#map {
-  height: 300px;
-}
-
-.clear {
-    clear: both;
-}
-
-.board {
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px ;
-}
-
-.game-row {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; 
-}
-
-.cell {
-  height: 100px;
-  width: 100px;
-  border: 1px solid#b5915f;
-  background-color: #fafffa;
-}
-
-.brook {
-  background-image: url('brook.png');
-  background-size: 100px;
-}
-
-.wrook {
-  background-image: url('wrook.png');
-  background-size: 100px;
-}
-
-.bknight {
-  background-image: url('bknight.png');
-  background-size: 100px;
-}
-
-.wknight {
-  background-image: url('wknight.png');
-  background-size: 100px;
-}
-
-.bking {
-  background-image: url('bking.png');
-  background-size: 100px;
-}
-
-.wking {
-  background-image: url('wking.png');
-  background-size: 100px;
-}
-
-.bqueen {
-  background-image: url('bqueen.png');
-  background-size: 100px;
-}
-
-.wqueen {
-  background-image: url('wqueen.png');
-  background-size: 100px;
-}
-
-.bpawn {
-  background-image: url('bpawn.png');
-  background-size: 100px;
-}
-
-.wpawn {
-  background-image: url('wpawn.png');
-  background-size: 100px;
-}
-
-.bbishop {
-  background-image: url('bbishop.png');
-  background-size: 100px;
-}
-
-.wbishop {
-  background-image: url('wbishop.png');
-  background-size: 100px;
 }
 
 .selected {
@@ -909,7 +303,6 @@ hr {
 
 
 
-
 /*This is for the button to open the modal*/
 
 
@@ -1030,12 +423,6 @@ a:link {
   margin-bottom: 100px;
   item-align: center;
 }
-
-
-
-
-
-
 
 
 
@@ -1199,4 +586,15 @@ li {
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+.next-player  {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#fade {
+  text-align: center;
+  color: rgb(245, 2, 2);
 }
