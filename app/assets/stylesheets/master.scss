@@ -210,7 +210,7 @@ h3 {
   }
 
 
-h5{
+h5 {
   color: #D7D1CD;
   font-family: 'Acme', sans-serif;
   font-size: 15px;
@@ -243,20 +243,14 @@ hr {
 }
 
 
-.title3 {
+.blue_bg {
   color: #D7D1CD;
   font-family: 'Acme', sans-serif;
   font-size: 50px;
   text-align: center;
-  item-align: left;
-  border-radius: 40px;
-  margin-top: 40px;
-  margin-right: 300px;
-  background: #283245;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-color: #D7D1CD;
-  border-width: 2px;
+  background-color: #283245;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 
