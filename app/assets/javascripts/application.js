@@ -19,4 +19,4 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require_tree .
-//= require game.js
+//= require game

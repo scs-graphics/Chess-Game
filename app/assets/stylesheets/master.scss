@@ -76,8 +76,8 @@ body.team {
 
 .board {
   display: inline-grid;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
   padding: 20px;
   background-color: gray;
   border-radius: 0.5em;
@@ -92,78 +92,90 @@ body.team {
 }
 
 
-.cell {
-  background-color: grey;
-  border: 3px solid whitesmoke;
-  width: 50px;
-  height: 50px;
-  padding: 20px;
-  border-radius: 0.4em;
-  text-align: center;
-}
+// .cell {
+//   background-color: grey;
+//   border: 3px solid whitesmoke;
+//   width: 60px;
+//   height: 60px;
+//   padding: 20px;
+//   border-radius: 0.4em;
+//   text-align: center;
+// }
 
 .brook {
   background-image: url('brook.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wrook {
   background-image: url('wrook.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .bknight {
   background-image: url('bknight.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wknight {
   background-image: url('wknight.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .bking {
   background-image: url('bking.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wking {
   background-image: url('wking.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .bqueen {
   background-image: url('bqueen.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wqueen {
   background-image: url('wqueen.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .bpawn {
   background-image: url('bpawn.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wpawn {
   background-image: url('wpawn.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .bbishop {
   background-image: url('bbishop.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .wbishop {
   background-image: url('wbishop.png');
-  // background-size: 100px;
+  background-position: center;
+  background-size: 50px;
 }
 
 .selected {
-  box-shadow: 0 0 20px pink inset;
+  box-shadow: 0 0 20px rgb(18, 18, 128) inset;
 }
 
 .round-image-100 {
@@ -597,4 +609,24 @@ li {
 #fade {
   text-align: center;
   color: rgb(245, 2, 2);
+}
+
+.white  {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid rgb(172, 29, 29);
+  width: 60px;
+  height: 60px;
+  border-radius: 0.4em;
+  text-align: center;
+}
+
+.brown {
+  display: inline-block;
+  background-color: rgba(255, 123, 0, 0.397);
+  border: 2px solid rgb(172, 29, 29);
+  width: 60px;
+  height: 60px;
+  border-radius: 0.4em;
+  text-align: center;
 }

@@ -11,11 +11,8 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/app/assets/stylesheets/master.scss">
-    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
-    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src = "/app/assets/javascripts/games.js"></script>    
+    <link rel="stylesheet" href="app/assets/stylesheets/master.scss">
+    <script type="text/javascript" src = "/app/assets/javascripts/game.js"></script>    
 
   </head>
   
@@ -27,78 +24,78 @@
   <!-- Building the chess bard --!>
     <div class="booyah-box row">
 
-      <div class="board col-12 col-sm-8">
-        <div class="cell piece brook"></div>
-        <div class="cell piece bknight"></div>
-        <div class="cell piece bbishop"></div>
-        <div class="cell piece bqueen"></div>
-        <div class="cell piece bking"></div>
-        <div class="cell piece bbishop"></div>
-        <div class="cell piece bknight"></div>
-        <div class="cell piece brook"></div>
+      <div class="board">
+        <div class="white piece cell brook" row="8" column="1" player="black" piece="rook" empty="false"></div>
+        <div class="brown piece cell bknight" row="8" column="2" player="black" piece="knight" empty="false"></div>
+        <div class="white piece cell bbishop" row="8" column="3" player="black" piece="bishop" empty="false"></div>
+        <div class="brown piece cell bqueen" row="8" column="4" player="black" piece="queen" empty="false"></div>
+        <div class="white piece cell bking" row="8" column="5" player="black" piece="king" empty="false"></div>
+        <div class="brown piece cell bbishop" row="8" column="6" player="black" piece="bishop" empty="false"></div>
+        <div class="white piece cell bknight" row="8" column="7" player="black" piece="knight" empty="false"></div>
+        <div class="brown piece cell brook" row="8" column="8" player="black" piece="rook" empty="false"></div>
 
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
-        <div class="cell piece bpawn"></div>
+        <div class="brown piece cell bpawn" row="7" column="1" player="black" piece="pawn" empty="false"></div>
+        <div class="white piece cell bpawn" row="7" column="2" player="black" piece="pawn" empty="false"></div>
+        <div class="brown piece cell bpawn" row="7" column="3" player="black" piece="pawn" empty="false"></div>
+        <div class="white piece cell bpawn" row="7" column="4" player="black" piece="pawn" empty="false"></div>
+        <div class="brown piece cell bpawn" row="7" column="5" player="black" piece="pawn" empty="false"></div>
+        <div class="white piece cell bpawn" row="7" column="6" player="black" piece="pawn" empty="false"></div>
+        <div class="brown piece cell bpawn" row="7" column="7" player="black" piece="pawn" empty="false"></div>
+        <div class="white piece cell bpawn" row="7" column="8" player="black" piece="pawn" empty="false"></div>
 
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
+        <div class="white cell" row="6" column="1" empty="true"></div>
+        <div class="brown cell" row="6" column="2" empty="true"></div>
+        <div class="white cell" row="6" column="3" empty="true"></div>
+        <div class="brown cell" row="6" column="4" empty="true"></div>
+        <div class="white cell" row="6" column="5" empty="true"></div>
+        <div class="brown cell" row="6" column="6" empty="true"></div>
+        <div class="white cell" row="6" column="7" empty="true"></div>
+        <div class="brown cell" row="6" column="8" empty="true"></div>
 
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
+        <div class="brown cell" row="5" column="1" empty="true"></div>
+        <div class="white cell" row="5" column="2" empty="true"></div>
+        <div class="brown cell" row="5" column="3" empty="true"></div>
+        <div class="white cell" row="5" column="4" empty="true"></div>
+        <div class="brown cell" row="5" column="5" empty="true"></div>
+        <div class="white cell" row="5" column="6" empty="true"></div>
+        <div class="brown cell" row="5" column="7" empty="true"></div>
+        <div class="white cell" row="5" column="8" empty="true"></div>
 
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
+        <div class="white cell" row="4" column="1" empty="true"></div>
+        <div class="brown cell" row="4" column="2" empty="true"></div>
+        <div class="white cell" row="4" column="3" empty="true"></div>
+        <div class="brown cell" row="4" column="4" empty="true"></div>
+        <div class="white cell" row="4" column="5" empty="true"></div>
+        <div class="brown cell" row="4" column="6" empty="true"></div>
+        <div class="white cell" row="4" column="7" empty="true"></div>
+        <div class="brown cell" row="4" column="8" empty="true"></div>
 
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
+        <div class="brown cell" row="3" column="1" empty="true"></div>
+        <div class="white cell" row="3" column="2" empty="true"></div>
+        <div class="brown cell" row="3" column="3" empty="true"></div>
+        <div class="white cell" row="3" column="4" empty="true"></div>
+        <div class="brown cell" row="3" column="5" empty="true"></div>
+        <div class="white cell" row="3" column="6" empty="true"></div>
+        <div class="brown cell" row="3" column="7" empty="true"></div>
+        <div class="white cell" row="3" column="8" empty="true"></div>
 
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
-        <div class="cell piece wpawn"></div>
+        <div class="white piece cell wpawn" row="2" column="1" player="white" piece="pawn" empty="false"></div>
+        <div class="brown piece cell wpawn" row="2" column="2" player="white" piece="pawn" empty="false"></div>
+        <div class="white piece cell wpawn" row="2" column="3" player="white" piece="pawn" empty="false"></div>
+        <div class="brown piece cell wpawn" row="2" column="4" player="white" piece="pawn" empty="false"></div>
+        <div class="white piece cell wpawn" row="2" column="5" player="white" piece="pawn" empty="false"></div>
+        <div class="brown piece cell wpawn" row="2" column="6" player="white" piece="pawn" empty="false"></div>
+        <div class="white piece cell wpawn" row="2" column="7" player="white" piece="pawn" empty="false"></div>
+        <div class="brown piece cell wpawn" row="2" column="8" player="white" piece="pawn" empty="false"></div>
 
-        <div class="cell piece wrook"></div>
-        <div class="cell piece wknight"></div>
-        <div class="cell piece wbishop"></div>
-        <div class="cell piece wqueen"></div>
-        <div class="cell piece wking"></div>
-        <div class="cell piece wbishop"></div>
-        <div class="cell piece wknight"></div>
-        <div class="cell piece wrook"></div>
+        <div class="brown piece cell wrook" row="1" column="1" player="white" empty="false"></div>
+        <div class="white piece cell wknight" row="1" column="2" player="white" empty="false"></div>
+        <div class="brown piece cell wbishop" row="1" column="3" player="white" empty="false"></div>
+        <div class="white piece cell wqueen" row="1" column="4" player="white" empty="false"></div>
+        <div class="brown piece cell wking" row="1" column="5" player="white" empty="false"></div>
+        <div class="white piece cell wbishop" row="1" column="6" player="white" empty="false"></div>
+        <div class="brown piece cell wknight" row="1" column="7" player="white" empty="false"></div>
+        <div class="white piece cell wrook" row="1" column="8" player="white" empty="false"></div>
 
       </div>
 
