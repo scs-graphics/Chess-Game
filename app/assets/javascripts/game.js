@@ -1,30 +1,5 @@
 $(document).ready( function()    {
 
-    // //Adding the drgagging functionality and the mouseover/mouseout shadow
-    // $( function() {
-    //     $( ".piece" ).draggable( { snap: ".cell" } );
-    //     // $( ".wpawn" ).draggable( { axis: "y" } );
-    //     // $( ".bpawn" ).draggable( { axis: "y" } );
-    // } );
-
-    // var cell = document.getElementsByClassName('cell');
-
-    // for ( i = 0; i < cell.length; i++ )  {
-
-    //     var piece = document.getElementsByClassName('piece');
-
-    //     // Adding a highlight shadow over each piece whenever mouse hover over
-    //     piece.addEventListener("mouseover", () => {
-    //         piece.classList.add("selected");
-    //     });
-
-    //         // Taking away the hightligh shadow whenever mouse hover away from piece
-    //     piece.addEventListener("mouseout", () => {
-    //         piece.classList.remove("selected");
-    //     });
-        
-    // }
-
 
     var selection = {piece: '', player: '', row: '', column: '', empty: ''}
 
@@ -33,23 +8,29 @@ $(document).ready( function()    {
 
     // Building all the pieces on the board
     $("[piece]").each(function()    {
-        var player = $(this).attr("player");
-        var piece = $(this).attr("piece");
+        let player = $(this).attr('player');
+        let piece = $(this).attr('piece');
         // $(this).css("background-image", src = "app/aseets/images/pieces/"+player+"/"+piece+".png").css("background-size", "60px 60px");
     })
 
     $("[empty]").on("click", function() {
-        var empty = $(this).attr('empty');
-        var targetPiece = $(this).attr('piece');
-        var targetPlayer = $(this).attr('player');
-        var targetRow = $(this).attr('row');
-        var targetColumn = $(this).attr('column');
-        var targetEmpty = $(this).attr('empty');
+        console.log("cell clicked");
+        var empty = $(this).attr('empty'),
+        targetPiece = $(this).attr('piece'),
+        targetPlayer = $(this).attr('player'),
+        targetRow = $(this).attr('row'),
+        targetColumn = $(this).attr('column'),
+        targetEmpty = $(this).attr('empty')
+
 
         // Making sure the right player is the one starting the game
         if (targetPlayer == nextTurn) {
             selection = {piece:targetPiece, player:targetPlayer, row:targetRow, column:targetColumn, empty:targetEmpty};
+            // console.log(player);
+            // console.log(piece);
         } else if ( (empty == 'false') && ((targetRow != selection.row) || (targetColumn != selection.column)) ) {// Making sure that the player didn't pick a piece and drop it back in the same cell
+            console.log(player);
+            console.log(piece);
             if ( typeof targetPiece == 'undefined' )    {
                 targetPiece = '';
             }
@@ -61,20 +42,33 @@ $(document).ready( function()    {
         }
     })
 
+    //The function to check if the move is a valid move
     function validMove(player, piece, row, column, targetPlayer, targetPiece, targetRow, targetColumn)  {
         row = parseInt(row);
         column = parseInt(column);
         targetRow = parseInt(targetRow);
         targetColumn = parseInt(targetColumn);
 
+        // console.log("player = " + player);
+        // console.log("piece = " + piece);
+        // console.log("row = " + row);
+        // console.log("column = " + column);
+        // console.log("targetPlayer = " + targetPlayer);
+        // console.log("targetPiece = " + targetPiece);
+        // console.log("targetRow = " + targetRow);
+        // console.log("targetColumn = " + targetColumn);
+
         //Logic for moving the Pawn piece
         if (piece == 'pawn')    {
+            console.log("Piece = " + piece);
             if (player == 'white')  {
+                console.log("Player = " + player);
                 var rowLogic = row + 1;
                 if (row == 2)   {
                     var firstMoveRowLogic = row + 2;
                 }
             } else if (player == 'black') {
+                console.log("Player = " + player);
                 var rowLogic = row - 1;
                 if (row == 7)   {
                     var firstMoveRowLogic = row - 2;
@@ -116,11 +110,6 @@ $(document).ready( function()    {
         $("[targetRow='"+targetRow+"'], [targetColumn='"+targetColumn+"']").attr('piece', piece).attr('empty', 'false');
         $("[targetRow='"+targetRow+"'], [targetColumn='"+targetColumn+"']").classList.add(letterPiece);
 
-        // $("row:nth-child("row"), column:nth-child("column")").removeClass("[piece]");
-
-        
-        // piece.classList.remove("pawn");
-        // event.target.classList.add("pawn");
     }
 
 
